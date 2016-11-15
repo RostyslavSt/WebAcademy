@@ -1,0 +1,25 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrapper {
+	width: 1000px;
+}
+.head {
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	background-color: #9F7FB2;
+}
+.logo {
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: #fff;
+}
+.logo-text {
+	float: left;
+}
