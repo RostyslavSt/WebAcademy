@@ -1,13 +1,17 @@
+body {
+	color: #9F7FB2;
+}
 .clearfix:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 .wrapper {
-	width: 1000px;
+	width: 800px;
+	margin: 0 auto;
 }
 .head {
-	width: 1000px;
+	width: 800px;
 	margin: 0 auto;
 }
 header {
@@ -22,4 +26,43 @@ header {
 }
 .logo-text {
 	float: left;
+	color: #fff;
+}
+.menu {
+	float: right;
+
+}
+.menu li {
+	float: left;
+	text-transform: uppercase;
+	list-style: none;
+	
+	margin-left: 25px;
+	
+}
+.menu li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+main h1 {
+	font-size: 50px;
+}
+.img {
+	background-image: url(../img/pic1.png);
+	height: 170px;
+	max-width: 629px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.article1 {
+	float: left;
+	width: 50%;
+}
+.article2 {
+	float: right;
+	width: 50%;
 }
