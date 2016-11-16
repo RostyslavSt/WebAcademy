@@ -1,0 +1,67 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrapper {
+	max-width: 850px;
+	background-color: #29333F;
+	padding: 100px 30px;
+	margin: 50px auto;
+}
+main {
+	max-width: 500px;
+	background-color: #F9FAFB;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+main h2 {
+	float: left;
+	padding-left: 20px;
+}
+.head {
+	border-bottom: 1px solid #ECF0F1;
+}
+.close {
+	float: right;
+	line-height: 62px;
+	margin-right: 20px;
+	font-size: 24px;
+	color: #BEC5CC;
+
+}
+main p span {
+	color: #21BB9A;
+}
+.text {
+	padding: 10px 20px;
+}
+footer {
+	background-color: #ECF0F1;
+	margin-bottom: 39px;
+	padding: 20px 20px;
+}
+footer a {
+	display: block;
+	text-decoration: none;
+	margin: 0 auto;
+	color: #fff;
+}
+footer > div {
+	width: 125px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+.button-now {
+	float: right;
+	background-color: #BDC3C7;
+}
+.button-off  {
+	float: right;
+	margin-left: 20px;
+	background-color: #21BB9A;
+}
+
+
