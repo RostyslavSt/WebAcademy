@@ -82,13 +82,7 @@ body {
 	max-height: 100%;
 }
 .vintage-bike-img {
-	max-width: 100%;
-	width: 100%;
-	height: 100%;
 	background-image: url(../img/bike_2.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	text-align: center;
 }
 .small-bike {
@@ -110,13 +104,6 @@ body {
 }
 .bike-seat-img {
 	background-image: url(../img/bike_3.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 /***<SECTION BORIOSA***/
@@ -133,14 +120,7 @@ body {
 	max-height: 100%;
 }
 .boriosa-bike-img {
-	max-width: 100%;
-	width: 100%;
-	height: 100%;
-	max-height: 600px;
 	background-image: url(../img/boriosa_4.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	text-align: center;
 }
 .small-bike {
@@ -162,13 +142,6 @@ body {
 }
 .bike-seat-img {
 	background-image: url(../img/bike_5.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 /***<SECTION RETRO BIKE***/
@@ -187,14 +160,7 @@ body {
 	max-height: 100%;
 }
 .retro-first-img {
-	height: 100%;
-	max-height: 100%;
 	background-image: url(../img/bike_7.jpg);
-	width: 100%;
-	max-width: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .retro-second-img {
 	height: 100%;
@@ -213,24 +179,10 @@ body {
 }
 
 .retro-third-img {
-	height: 100%;
-	max-height: 100%;
 	background-image: url(../img/bike_6.jpg);
-	width: 100%;
-	max-width: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .retro-seat-img {
 	background-image: url(../img/bike_8.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 
@@ -279,13 +231,6 @@ body {
 }
 .shop-first-top-left-img {
 	background-image: url(../img/seat_brooks_small.png);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .shop-first-top-right {
 	height: 100%;
@@ -293,23 +238,9 @@ body {
 }
 .shop-first-top-right-img {
 	background-image: url(../img/bike_9.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .shop-first-bottom-img {
 	background-image: url(../img/bike_11.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .shop-second-block {
@@ -322,13 +253,6 @@ body {
 }
 .shop-second-left-img {
 	background-image: url(../img/bike_12.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .shop-second-right {
 	height: 100%;
@@ -336,13 +260,6 @@ body {
 }
 .shop-second-right-img {
 	background-image: url(../img/bike_13.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .shop-third-block {
@@ -351,13 +268,6 @@ body {
 }
 .shop-third-top-img {
 	background-image: url(../img/shop.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .shop-third-bottom-left {
 	height: 100%;
@@ -365,13 +275,6 @@ body {
 }
 .shop-third-bottom-left-img {
 	background-image: url(../img/bike_14.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .shop-third-bottom-right {
 	height: 100%;
@@ -379,13 +282,6 @@ body {
 }
 .shop-third-bottom-right-img {
 	background-image: url(../img/bike_15.jpg);
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 
