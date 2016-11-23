@@ -1,0 +1,481 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+/***HEADER***/
+.header {
+	background-image: url(../img/bike_1.jpg);
+	max-width: 100%;
+	max-height: 800px;
+	height: 800px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.menu {
+	margin-top: 20px;
+	max-width: 620px;
+	margin: 0 auto;
+}
+.menu li {
+	float: left;
+	margin: 10px 52px 0 0;
+	
+}
+.menu li:last-child {
+	margin-right: 0;
+}
+.menu li a {
+	display: block;
+	padding-top: 30px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #4d4959;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo-img {
+	display: block;
+	padding-top: 0;
+	background-image: url(../img/logo.png);
+	width: 95px;
+	height: 85px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+/***SECTION NEW GENERATION***/
+.generation-new {
+	background-color: #f7f7f7;
+	text-align: center;
+}
+.generation-img {
+	margin: 118px 0 28px;
+}
+
+.generation-title {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #353738;
+}
+.generation-text {
+	font-size: 18px;
+	padding-bottom: 143px;
+	color: #848789;
+}
+
+
+/***<SECTION Vintage***/
+.vintage {
+	height: 600px;
+	max-height: 600px;
+}
+.vintage-bike {
+	height: 100%;
+}
+.vintage-bike-description {
+	text-align: center;
+	height: 100%;
+	max-height: 100%;
+}
+.vintage-bike-img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bike_2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.small-bike {
+	display: block;
+	padding-top: 240px
+}
+.vintage-bike-text {
+	max-height: 66.6666%;
+	height: 66.6666%;
+	position: relative;
+}
+.vintage-img {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}
+.bike-seat {
+	height: 33.3333%;
+	max-height: 33.3333%;
+}
+.bike-seat-img {
+	background-image: url(../img/bike_3.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/***<SECTION BORIOSA***/
+.boriosa {
+	height: 600px;
+	max-height: 600px;
+}
+.boriosa-bike {
+	height: 100%;
+}
+.boriosa-bike-description {
+	text-align: center;
+	height: 100%;
+	max-height: 100%;
+}
+.boriosa-bike-img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	max-height: 600px;
+	background-image: url(../img/boriosa_4.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.small-bike {
+	display: block;
+	padding-top: 240px
+}
+.boriosa-bike-text {
+	max-height: 66.6666%;
+	height: 66.6666%;
+	position: relative;
+}
+.boriosa-img {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}
+.boriosa-bike-seat {
+	height: 33.3333%;
+	max-height: 33.3333%;
+}
+.bike-seat-img {
+	background-image: url(../img/bike_5.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/***<SECTION RETRO BIKE***/
+.retro-bike {
+	height: 600px;
+	max-height: 600px;
+}
+.retro-first {
+	height: 100%;
+	max-height: 100%;
+}.retro-second {
+	height: 100%;
+	max-height: 100%;
+}.retro-third {
+	height: 100%;
+	max-height: 100%;
+}
+.retro-first-img {
+	height: 100%;
+	max-height: 100%;
+	background-image: url(../img/bike_7.jpg);
+	width: 100%;
+	max-width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.retro-second-img {
+	height: 100%;
+}
+.retro-img {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}
+.retro-bike-description {
+	text-align: center;
+	height: 100%;
+	max-height: 100%;
+}
+.retro-bike-text {
+	position: relative;
+}
+
+.retro-third-img {
+	height: 100%;
+	max-height: 100%;
+	background-image: url(../img/bike_6.jpg);
+	width: 100%;
+	max-width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.retro-seat-img {
+	background-image: url(../img/bike_8.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/***<SECTION NEWYORK***/
+.new-york {
+	background-color: #f7f7f7;
+	/*background-color: red;*/
+	text-align: center;
+}
+.new-york-twitter {
+	padding: 124px 0 33px;
+}
+.new-york-content {
+	margin: 0 auto;
+	max-width: 1038px;
+}
+.new-york-content h4 {
+	margin-bottom: 24px;
+}
+.new-york-content span {
+	color: #848789;
+}
+.new-york-content p {
+	font-size: 24px;
+	font-style: italic;
+	color: #848789;
+	margin-bottom: 98px;
+}
+.new-york-points {
+	margin-bottom: 65px;
+}
+
+/***<SECTION SHOP NOW***/
+.shop-now {
+	height: 534px;
+	max-height: 534px;
+}
+.shop-first-block {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-first-top-left {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-first-top-left-img {
+	background-image: url(../img/seat_brooks_small.png);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.shop-first-top-right {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-first-top-right-img {
+	background-image: url(../img/bike_9.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.shop-first-bottom-img {
+	background-image: url(../img/bike_11.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.shop-second-block {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-second-left {
+	height: 100%;
+	max-height: 100%
+}
+.shop-second-left-img {
+	background-image: url(../img/bike_12.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.shop-second-right {
+	height: 100%;
+	max-height: 100%
+}
+.shop-second-right-img {
+	background-image: url(../img/bike_13.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.shop-third-block {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-third-top-img {
+	background-image: url(../img/shop.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.shop-third-bottom-left {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-third-bottom-left-img {
+	background-image: url(../img/bike_14.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.shop-third-bottom-right {
+	height: 100%;
+	max-height: 100%;
+}
+.shop-third-bottom-right-img {
+	background-image: url(../img/bike_15.jpg);
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/***<SECTION DISCOVER SHOP***/
+.discover-shop {
+	background-color: #282f35;
+}
+.discover-shop-button {
+	margin: 0 auto;
+	padding: 75px 0;
+	text-align: center;
+
+}
+.discover-shop-button a {
+	border: 1px solid #94979a;
+	padding: 18px 56px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/***<SECTION <SECTION FEEDBACK***/
+.feedback-logo-div {
+	margin: 102px auto 32px 0;
+}
+.feedback-logo-img {
+	display: block;
+	padding-top: 0;
+	background-image: url(../img/logo.png);
+	width: 95px;
+	height: 85px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+.feedback-title {
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	color: #848789;
+	margin: 30px 0 30px;
+}
+.form-feedback {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 108px;
+	font-size: 0;
+}
+.feedback-email {
+	color: #848789;
+	font-size: 20px;
+	font-style: italic;
+	width: 400px;
+	height: 70px;
+	box-sizing: border-box;
+	padding-left: 25px;
+}
+.go-button {
+	font-size: 24px;
+	text-transform: uppercase;
+	width: 126px;
+	height: 70px;
+	background-color: #64c29e;
+	color: #fff;
+	border: none;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+/***FOOTER***/
+.footer {
+	background-color: #f7f7f7;
+	color: #848789;
+}
+.address p:first-child {
+	font-weight: bold;
+}
+.footer-block {
+	padding: 96px 0 96px;
+	max-width: 1108px;
+	margin: 0 auto;
+}
+.social-icons {
+	text-align: center;
+	vertical-align: bottom;
+}
+.social-icons > a {
+	margin: 0 7px 0;
+}
+.author {
+	text-align: right;
+}
