@@ -4,14 +4,15 @@
 }
 
 .row:after {
-    display: table;
+    display: block;
     clear: both;
-    content: "";
+    content: " ";
     width: 100%;
 }
 .row-6 { height: 50% }
 .row-8 { height: 66.666666% }
 .row-4 { height: 33.333333% }
+
 
 .col-1 {  width: 8.333333%  }
 .col-2 {  width: 16.666667% }
