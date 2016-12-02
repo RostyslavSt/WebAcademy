@@ -2,6 +2,18 @@
 	height: 90%;
 	max-height: 90%;
 }
+.sub-block-1-v {
+	height: 100%;
+	max-height: 100%;
+}
+.sub-block-1 {
+	height: 100%;
+	max-height: 100%;
+}
+.logo-small {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}
 
 
 /***HEADER***/
@@ -60,14 +72,8 @@
 
 .bike-description {
 	text-align: center;
-	height: 100%;
-	max-height: 100%;
 }
 /***<SECTION Vintage**/
-
-.vintage-bike {
-	height: 100%;
-}
 
 .vintage-bike-img {
 	background-image: url(../img/bike_2.jpg);
@@ -86,14 +92,14 @@
 	min-height: 230px;
 	position: relative;
 }
-.vintage-img {
+/*.vintage-img {
 	margin: 67px 0 27px;
 	max-width: 100%;
-}
-.bike-seat {
-	height: 33.3333%;
-	max-height: 33.3333%;
-}
+}*/
+/*.bike-seat {
+	height: 100%;
+	max-height: 100%;
+}*/
 
 /***<SECTION BORIOSA***/
 
@@ -113,18 +119,12 @@
 	top: calc(50% - 75px);
 }
 .boriosa-bike-text {
-	max-height: 66.6666%;
-	height: 66.6666%;
 	position: relative;
 }
-.boriosa-img {
+/*.boriosa-img {
 	margin: 67px 0 27px;
 	max-width: 100%;
-}
-.boriosa-bike-seat {
-	height: 33.3333%;
-	max-height: 33.3333%;
-}
+}*/
 .bike-seat-img {
 	background-image: url(../img/bike_5.jpg);
 }
@@ -135,12 +135,19 @@
 	height: 100%;
 	max-height: 100%;
 }
-.retro-img {
+.retro-bike {
+	position: relative;
+}
+/*.retro-img {
 	margin: 67px 0 27px;
 	max-width: 100%;
-}
+}*/
 .retro-bike-text {
 	position: relative;
+}
+.bike-description {
+	height: 100%;
+	max-height: 100%;
 }
 
 /***<SECTION NEWYORK***/
@@ -173,17 +180,10 @@
 }
 
 /***<SECTION SHOP NOW***/
-.section-block {
-	height: 100%;
-	max-height: 100%;
-}
 .img-bg {
 	display: block;
 }
-.sub-block-1 {
-	height: 100%;
-	max-height: 100%;
-}
+
 .sub-block {
 	height: 100%;
 	max-height: 100%;
