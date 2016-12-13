@@ -1,15 +1,40 @@
 // Задание 7
-// Напишите код для вывода alert случайного значения из массива:
+// Написать функцию конструктор Animal задать ей свойства и методы
+// (на свое усматрение) которые общие для всех животных, 
+// на основе конструкторах Animal  описать конструктор Horse и Bird которые 
+// будут дополнять методы от Animal собственными методами и свойствами. 
+// Задание творческое, методы и свойства которые нужно реализовать выберите сами.
 
-'use strict'
-var arrNew = ['ipsum', 35, 78, 'lorem', 45];
-var randomIndex;
-
-function randomValue(arr) {
-	var lengthArr = arr.length;
-	return Math.round( Math.random() * (arr.length - 1) );
+function Animal(color, typeFood, amountFood, helpingFood) {
+	this.color = color;
+	this.typeFood = typeFood;
+	this.amountFood = amountFood; //запас еды
+	this.helpingFood = helpingFood; //порция продуктов
+	this.giveFood = function (portion) { //дать продуктов
+		amountFood += portion;
+	}
+	this.eating = function() { 				//кол-продуктов сьедаемых за 1 раз
+		amountFood -= this.helpingFood;
+	};
+	this.foodBalance = function() {			//остаток продуктов
+		return amountFood;
+	}
 }
-randomIndex = randomValue(arrNew);
-console.log('Исходный массив: ' + arrNew);
-console.log('Случайное значение из массива:');
-console.log('Индекс - ' + randomIndex + '; ' + 'Значение: ' + arrNew[randomIndex]);
+
+randomAnimal = new Animal('white', 'hay', 20, 3);
+
+// function Horse(kindHorse) {
+// 	Animal.call(this);
+// 	this.kindHorse = kindHorse;
+// 	this.run = function () {
+// 		this.eating();
+// 	};
+// }
+
+// horse = new Horse('Mustang');
+// horse.color = 'black';
+// horse.typeFood = 'oats';
+// horse.amountFood = 100;
+// horse.helpingFood = 25;
+
+// console.log(horse);
