@@ -39,25 +39,110 @@ function Fridge(power) {
 		let cloneFood = this._food.concat();
 		return cloneFood;
 	};
+
+	this.filterFood = function(func) {
+		
+		let arr = this._food;
+		let filterArr = [];
+		
+		for (let i = 0; i < arr.length; i++) {
+			if ( func(arr[i]) ) {
+				filterArr.push(arr[i]);
+			}
+		}
+		return filterArr;
+	}
+
+	this.removeFood = function(item) {
+		let arr = this._food;
+		for (let i = 0; i < arr.length; i++) {
+			if (arr[i].title === item) {
+				arr.splice(i, 1);
+			}
+		}
+	};
+
+	//переопределяем disable
+	// let parentDisable = this.disable;
+	this.disable = function() {
+		// parentDisable.call(this);
+		if (this._food.length > 0) {
+			return console.log('Sorry, we can not turn off the fridge because it contains food');
+		} else this.enabled = false;
+	}
 	
-}
+} // FRIDGE
 
-let zanussi = new Fridge(500);
+let fridge = new Fridge(500);
 
-zanussi.showLimitFood();
-console.log('Остаток еды на начало: ' + zanussi.getFood());
-console.log(zanussi.getFood());
+fridge.showLimitFood();
+console.log('Остаток еды на начало: ' + fridge.getFood());
+console.log(fridge.getFood());
 console.log('------------------------');
-zanussi.addFood('cutlet');
+fridge.addFood('cutlet');
 
-zanussi.enable();
+fridge.enable();
 
-zanussi.addFood('cutlet');
-zanussi.addFood('green-stuff', 'pineapple');
-zanussi.addFood('potatoes', 'cabbage');
+fridge.addFood('cutlet');
+fridge.addFood('green-stuff', 'pineapple');
+fridge.addFood('potatoes', 'cabbage');
 
 console.log('------------------------');
-console.log('Остаток еды на конец : ' + zanussi.getFood());
-console.log(zanussi.getFood());
+console.log('Остаток еды на конец : ' + fridge.getFood());
+console.log(fridge.getFood());
+console.log('------------------------');
+console.log('----------Задание 7.3-----------');
+
+
+//------------------Задание 7.3--------------------
+fridge._food = []; // обнуляем массив еды
+console.log('Остаток еды на начало: ' + fridge.getFood());
+console.log(fridge.getFood());
+
+//добавляем еду
+fridge.addFood({
+  title: "котлета",
+  calories: 100
+});
+fridge.addFood({
+  title: "сок",
+  calories: 30
+});
+fridge.addFood({
+  title: "зелень",
+  calories: 10
+});
+fridge.addFood({
+  title: "варенье",
+  calories: 150
+});
+console.log('Количество еды : ' + fridge.getFood().length);
+
+console.log('Остаток еды на конец : ' + fridge.getFood());
+console.log(fridge.getFood());
+
+console.log('------------------------');
+fridge.removeFood('котлета');
+console.log(fridge.getFood());
+console.log('Количество еды : ' + fridge.getFood().length);
+
+
+let dietItems = fridge.filterFood(function(item) {
+	return item.calories < 50;
+});
+
+console.log('------------------------');
+console.log('Отсортированный массив');
+console.log(dietItems);
+
+dietItems.forEach(function(item) {
+  console.log( item.title ); // сок, зелень
+  fridge.removeFood(item);
+});
+
+console.log('------------------------');
+fridge.disable();
+console.log(fridge.isMashineEnabled());
+
 
 
