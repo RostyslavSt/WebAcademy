@@ -10,7 +10,7 @@ function Animal(color, typeFood, amountFood, helpingFood) {
 	this.typeFood = typeFood;
 	this.amountFood = amountFood; //запас еды
 	this.helpingFood = helpingFood; //порция продуктов
-	this.giveFood = function (portion) { //дать продуктов
+	this.giveFood = function(portion) { //дать продуктов
 		amountFood += portion;
 	}
 	this.eating = function() { 				//кол-продуктов сьедаемых за 1 раз
@@ -23,18 +23,26 @@ function Animal(color, typeFood, amountFood, helpingFood) {
 
 randomAnimal = new Animal('white', 'hay', 20, 3);
 
-// function Horse(kindHorse) {
-// 	Animal.call(this);
-// 	this.kindHorse = kindHorse;
-// 	this.run = function () {
-// 		this.eating();
-// 	};
-// }
+//horse
+function Horse(color, typeFood, amountFood, helpingFood, kindHorse) {
+	Animal.call(this, color, typeFood, amountFood, helpingFood, kindHorse);
+	this.kindHorse = kindHorse;
+	this.run = function () {
+		this.eating();
+	};
+}
 
-// horse = new Horse('Mustang');
-// horse.color = 'black';
-// horse.typeFood = 'oats';
-// horse.amountFood = 100;
-// horse.helpingFood = 25;
+// bird
+function Bird (color, typeFood, amountFood, helpingFood, 
+				typeBird, migratoryBird) {
+	Animal.call(this, color, typeFood, amountFood, helpingFood, 
+				typeBird, migratoryBird);
+	this.typeBird = typeBird;
+	this.migratoryBird = migratoryBird;
+}
 
-// console.log(horse);
+horse = new Horse('black', 'oats', 100, 25, 'Mustang');
+console.log(horse);
+
+bird = new Bird('white', 'oats', 10, 5, 'sparrow', true);
+console.log(bird);
