@@ -1,0 +1,36 @@
+.parent {
+    padding: 10px;
+    background: blue
+}
+.parent:after {
+    display: table;
+    clear: both;
+    content: ' ';
+    width: 100%;
+}
+
+.child {
+    height: 50px;
+    width: 50%;
+    box-sizing: border-box;
+
+    display: inline-block;
+    float: left
+}
+
+.red {
+    background: red
+}
+.green {
+    background: green
+}
+.yellow {
+    background: yellow;
+}
+.aqua {
+    background: aqua;
+}
+
+.cross-out {
+    text-decoration: line-through;
+}
