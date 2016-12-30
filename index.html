@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lesson 12</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Lesson 12</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"> -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<div class="widget">
+<body ng-app="commentsBlog">
+	<div class="widget" ng-controller='mainCtrl as vm'>
+		<form action="">
+			<div class="input-block">
+				<input class="input-user-name block-style" type="text" name="userName" id="userName" ng-model='vm.userName'>
+			</div>
+			<div class="text-block">
+				<textarea class="text-comments block-style" name="comment" id="comment" cols="30" rows="10" ng-model='vm.userComment'></textarea>
+			</div>
+			<div class="button block-style" ng-click="vm.addItem()">Add comment</div>
+		</form>
+		<div class="comments-list" ng-repeat="item in vm.data" id="{{item.id}}">
+			<div class="user-name comments-style">{{item.author}}</div>
+			<div class="user-comment comments-style">{{item.text}}</div>
+			<div class="comment-date comments-style">{{item.date}}</div>
+			<div class="separator-line"></div>
+		</div>
 
-</div>
-<script src="lib/jquery/jquery-3.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-<script src = "scripts/list.js"></script>
-<script src="scripts/main.js"></script>
+
+	</div>
+	<script src="lib/jquery/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<!-- <script src = "scripts/ajaxHelper.js"></script>
+	<script src = "scripts/list.js"></script> -->
+	<script src="lib/angular.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

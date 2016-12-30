@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.widget {
+    max-width: 600px;
+    margin: 50px auto 0;
+}
+
+.block-style {
+	width: 100%;
+	border-radius: 3px;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.input-user-name {
+	height: 30px;
+}
+.text-comments {
+	height: 120px;
+}
+
+.button {
+	background-color: #268AFF;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+.comments-list {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.comments-style {
+	margin: 10px 0;
+}
+.user-name {
+	color: #268AFF;
+	font-weight: bold;
+	font-size: 14px;
+}
+.comment-date {
+	text-align: right;
+}
+
+.separator-line {
+	border: 1px solid grey;
+}
