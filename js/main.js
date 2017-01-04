@@ -3,8 +3,7 @@
 //create controller
 class MainController {
 	constructor(commentsModel) {
-		//my model
-		this.data = [
+		this.comments = [
 			{
 				author: 'John',
 				text: 'consectetur adipisicing elit. Accusantium',
@@ -18,28 +17,29 @@ class MainController {
 				id: 5555887878
 			}
 		];
+
 		this.userName = '';
 		this.userComment = '';
 		this.model = commentsModel;
+		
 		this.model
 			.fetchComments()
 			.then( resp => {
-				this.data = resp.data;
-				// debugger;
+				this.comments = resp.data;
 			});
 	}
 
 	//push new comment
-	// addItem() {
-	// 	this.data.push();
-	// 	this.model.addComment(this.userName, this.userComment).then(resp => {
-	// 		debugger
-	// 		this.data.push(resp.data);
-	// 	});
+	addItem() {
+		debugger;
+		this.model.addComment(this.userName, this.userComment).then(resp => {
+			// debugger;
+			this.comments.push(resp.data);
+		});
 
-	// 	this.userName = '';
-	// 	this.userComment = '';
-	// }
+		this.userName = '';
+		this.userComment = '';
+	}
 }
 
 //constructor for server
@@ -62,14 +62,14 @@ class CommentsModel {
 		return this.$http.get(this.baseUrl);
 	}
 
-	// addComment(author, text) {
-	// 	const newCommentObject = {
-	// 		"author": author,
-	// 		"text": text,
-	// 		"data": this.currentDate()
-	// 	};
-	// 	return this.$http.post(this.$baseUrl, newCommentObject);
-	// }
+	addComment(author, text) {
+		const newCommentObject = {
+			"author": author,
+			"text": text,
+			"date": this.currentDate()
+		};
+		return this.$http.post(this.$baseUrl, newCommentObject);
+	}
 }
 
 //create angular module
@@ -78,3 +78,18 @@ angular.module('commentsBlog', [])
 	.service('commentsModel', CommentsModel);
 
 
+//my model
+		// this.comments = [
+		// 	{
+		// 		author: 'John',
+		// 		text: 'consectetur adipisicing elit. Accusantium',
+		// 		date: '30.10.2016 in 12.12.12',
+		// 		id: 232323232
+		// 	},
+		// 	{
+		// 		author: 'mike',
+		// 		text: 'Lorem ipsum dolor sit amet',
+		// 		date: '30.10.2016 in 10.11.33',
+		// 		id: 5555887878
+		// 	}
+		// ];

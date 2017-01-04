@@ -18,7 +18,7 @@
 			</div>
 			<div class="button block-style" ng-click="vm.addItem()">Add comment</div>
 		</form>
-		<div class="comments-list" ng-repeat="item in vm.data" id="{{item.id}}">
+		<div class="comments-list" ng-repeat="item in vm.comments" id="{{item.id}}">
 			<div class="user-name comments-style">{{item.author}}</div>
 			<div class="user-comment comments-style">{{item.text}}</div>
 			<div class="comment-date comments-style">{{item.date}}</div>
