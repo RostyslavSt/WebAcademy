@@ -31,7 +31,7 @@ class MainController {
 
 	//push new comment
 	addItem() {
-		debugger;
+		// debugger;
 		this.model.addComment(this.userName, this.userComment).then(resp => {
 			// debugger;
 			this.comments.push(resp.data);
